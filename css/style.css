@@ -47,7 +47,7 @@ main{
 	display: flex;
 	justify-content: center;
 	position: relative;
-	top: 80px;
+	top: 90px;
 }
 
 main div	{
@@ -73,6 +73,10 @@ main div	{
 	width: 240px;
 }
 
+.storyTitle	{
+	
+}
+
 .story	{
 	font-family: Georgia;
 	font-size: 17px;
@@ -90,9 +94,11 @@ main div	{
 .leadImg	{
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
 	height: 300px;
+	display: flex;
 }
 
 .leadImg .imgText	{
 	font-size: 40px;
+	
 }
 
