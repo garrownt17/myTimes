@@ -1,9 +1,14 @@
 body	{
 	margin: auto;
 }
+
+div	{
+	display: block;
+}
 /*header*/
 .logo	{
 	display: flex;
+	align-items: center;
 }
 
 p.logo	{
@@ -44,12 +49,13 @@ main{
 	justify-content: center;
 	position: relative;
 	top: 100px;
+	margin-bottom: 150px;
 }
-
+/*
 main div	{
 	border: 1px solid black;
 }
-
+*/
 .column	{
 	display: flex;
 	flex-direction: column;
@@ -59,17 +65,14 @@ main div	{
 
 .column.large	{
 	width: 630px;
-	border-color: blue;
 }
 
 .column.medium	{
 	width: 300px;
-	border-color: green;
 }
 
 .column.small	{
 	width: 240px;
-	border-color: yellow;
 }
 
 
@@ -92,34 +95,134 @@ main div	{
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
 	height: 300px;
 	display: flex;
+	align-items: center;
 }
 
 .leadImg .imgText	{
 	font-size: 40px;
-	
+	padding-left: 15px;
 }
-
 /*Sub-articles - Column 1*/
 .subCol	{
 	flex-direction: column;
-	border-color: red;
-	border-width: 3px;
 	width: 300px;
 }
 
-.col1bottom	{
+.stories	{
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
-	background-color: gray;
 	margin-right: 0px;
 }
 
 div.storyImg2.leftCol1	{
+	margin-top: 30px;
 	height: 299px;
+	text-align: center;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 }
 
 div.storyImg3.rightCol1	{
+	margin-top: 30px;
 	height: 299px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.cookieBite	{
+	background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-news-bite.png');
+	height: 250px;
+}
+
+.catCEO	{
+	height: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.catCEO p	{
+	text-align: center;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.bitelinks	{
+	border: 1px solid white;
+}
+
+.bites h2	{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.bites p	{
+	list-style-type: none;
+	display: block;
+	border-top: 1px solid black;
+	background-color: WhiteSmoke;
+	font-family: Verdana;
+	font-size: 12px;
+	color: DimGray;
+	margin:0;
+	width: 218px;
+}
+
+.bitelinks a	{
+	display: block;
+	padding: 10px;
+}
+
+.bitelinks a:hover	{
+	background-color: gray;
+}
+
+.bitelinks a:active	{
+	color: chartreuse;
+}
+
+/*footer styling*/
+footer	{
+	display: flex;
+	background-color: MediumAquamarine;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.info	{
+	display: flex;
+	align-items: center;
+}
+
+footer h3	{
+	font-family: Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	padding-right: 25px;
+	border-right: 2px solid white;
+	display: inline-block;
+}
+
+footer li	{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+footer p	{
+	display: block;
+}
+
+footer a	{
+	color: black;
 }
