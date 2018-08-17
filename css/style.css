@@ -300,12 +300,34 @@ div.storyImg3.rightCol1	{
 @media only screen and (max-width: 650px) {
 	main	{
 		flex-direction: column;
-		width: 90%;
+		width: 100%;
+		margin: 1rem auto 3rem;
+	}
+	
+	.story	{
+		width: 95%;
 		margin: 0 auto;
+	}
+	
+	
+	.leadImg p	{
+		font-size: 1.85rem;
+	}
+	
+	.storyTitle	{
+		font-size: 1.45rem;
+	}
+	
+	.imgText	{
+		font-size: 1.75rem;
 	}
 	
 	.column	{
 		margin: 0;
+	}
+	
+	.subCol	{
+		width: 50%;
 	}
 	
 	.column:first-child	{
@@ -322,7 +344,18 @@ div.storyImg3.rightCol1	{
 		max-width: initial;
 	}
 	
-	.rightCol1, .leftCol1	{
+	.mobile	{
+		width: 85%;
+		margin: 0 auto;
+		min-height: 18rem;
+	}
+	
+	.leftCol1 .imgText, .rightCol1 .imgText	{
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.storyImg2, .storyImg3	{
 		width: 100%;
 	}
 }
