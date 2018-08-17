@@ -7,6 +7,12 @@ div	{
 	display: block;
 }
 
+@media only screen and (max-width: 1350px) {
+	body {
+		font-size: 20px;
+	}
+}
+
 /*header*/
 .logo	{
 	display: flex;
@@ -52,7 +58,7 @@ header a:hover {
 	color: MediumAquamarine;
 }
 
-.medium-show	{
+.tablet-show	{
 	display: none;
 }
 
@@ -66,7 +72,7 @@ header a:hover {
 	margin: 0 1rem;
 	}
 	
-	.medium-show	{
+	.tablet-show	{
 		display: initial;
 	}
 }
@@ -242,7 +248,7 @@ div.storyImg3.rightCol1	{
 		margin-right: 3.125rem;
 	}
 		
-	.small-hide	{
+	.tablet-hide	{
 		display: none;
 	}
 	
