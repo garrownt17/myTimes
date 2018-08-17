@@ -1,6 +1,7 @@
 body	{
 	margin: auto;
 	font-size: 16px;
+	background-color: #ECEBE4;
 }
 
 div	{
@@ -13,17 +14,17 @@ div	{
 	}
 }
 
+@media only screen and (max-width: 1350px)	{
+	body	{
+		font-size: 24px;
+	}
+	
+	h1	{
+		font-size: 2rem;
+	}
+}
+
 /*header*/
-.logo	{
-	display: flex;
-	align-items: center;
-}
-
-p.logo	{
-	color: MediumAquamarine;
-	margin: 1em;
-}
-
 header	{
 	width: 100%;
 	height: 5rem;
@@ -32,11 +33,12 @@ header	{
 	font-size: 1rem;
 	font-weight: bold;
 	justify-content: space-between;
-	border-bottom: 1px black solid;
+	border-bottom: 2px black solid;
 	align-items: center;
 	position: fixed;
 	background-color: #FFF;
 	z-index: 1;
+	background-color: MediumAquamarine;
 }
 
 header div, header nav {
@@ -55,7 +57,26 @@ header a	{
 }
 
 header a:hover {
+	color: white;
+}
+
+.logo	{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+p.logo	{
 	color: MediumAquamarine;
+	margin: 1em;
+}
+
+.logo img {
+	height: 2.35rem;
+	margin-left: 1rem;
+	padding-right: 1rem;
+	border-right: 1px solid MediumAquamarine;
 }
 
 .tablet-show	{
@@ -76,16 +97,18 @@ header a:hover {
 		display: initial;
 	}
 }
+/*mobile header*/
+@media only screen and (max-width: 650px) {
+	/*I want to make a menu button that hides/shows the site menu when clicked on. Ideally, it will slide to the left from the edge*/
+}
 
 /*main content*/
-
 main{
 	display: flex;
 	justify-content: center;
 	position: relative;
 	top: 6.25rem;
 	margin-bottom: 9.375rem;
-	
 }
 /*
 main div	{
@@ -109,14 +132,17 @@ main div	{
 
 .column.large	{
 	width: 50%;
+	max-width: 40rem;
 }
 
 .column.medium	{
 	width: 25%;
+	max-width: 20rem;
 }
 
 .column.small	{
 	width: 20%;
+	max-width: 15rem;
 }
 
 .story	{
@@ -130,8 +156,15 @@ main div	{
 .imgText	{
 	color: white;
 	font-family: Georgia;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#leadstory	{
+	max-width: 40rem;
 }
 
 .leadImg	{
@@ -140,11 +173,15 @@ main div	{
 	height: 18.75rem;
 	display: flex;
 	align-items: center;
+	border-radius: 5px;
 }
 
-.leadImg .imgText	{
-	font-size: 2.5rem;
-	padding-left: 1rem;
+
+
+.leadImg p	{
+	font-size: 175%;
+	margin-left: 1rem;
+	width: 85%;
 }
 
 /*Sub-articles - Column 1*/
@@ -184,6 +221,7 @@ div.storyImg3.rightCol1	{
 .cookieBite	{
 	background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-news-bite.png');
 	height: 15.625rem;
+	border-radius: 5px;
 }
 
 .catCEO	{
@@ -200,6 +238,8 @@ div.storyImg3.rightCol1	{
 	align-content: center;
 	justify-content: center;
 }
+
+
 .bitelinks	{
 	border: 1px solid white;
 }
@@ -219,7 +259,6 @@ div.storyImg3.rightCol1	{
 	font-size: .75rem;
 	color: DimGray;
 	margin:0;
-	width: 13.625rem;
 }
 
 .bitelinks a	{
@@ -228,12 +267,13 @@ div.storyImg3.rightCol1	{
 }
 
 .bitelinks a:hover	{
-	background-color: gray;
+	background-color: MediumAquamarine;
 }
 
 .bitelinks a:active	{
 	color: chartreuse;
 }
+
 @media only screen and (max-width: 1350px)	{
 	main	{
 		position: initial;
@@ -257,6 +297,36 @@ div.storyImg3.rightCol1	{
 	
 }
 
+@media only screen and (max-width: 650px) {
+	main	{
+		flex-direction: column;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.column	{
+		margin: 0;
+	}
+	
+	.column:first-child	{
+		margin: 0;
+	}
+	
+	.column.large	{
+		width: 100%;
+		max-width: initial;
+	}
+
+	.column.medium	{
+		width: 100%;
+		max-width: initial;
+	}
+	
+	.rightCol1, .leftCol1	{
+		width: 100%;
+	}
+}
+
 /*footer styling*/
 footer	{
 	display: flex;
@@ -268,6 +338,8 @@ footer	{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	border-top: 2px black solid;
+	
 }
 
 .info	{
@@ -297,6 +369,10 @@ footer p	{
 
 footer a	{
 	color: black;
+}
+
+footer a:hover	{
+	color: white;
 }
 
 @media only screen and (max-width: 1350px)	{
