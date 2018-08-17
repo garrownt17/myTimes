@@ -42,6 +42,10 @@ header a	{
 	color: #000;
 }
 
+.small-show	{
+	display: none;
+}
+
 /*main content*/
 
 main{
@@ -50,6 +54,7 @@ main{
 	position: relative;
 	top: 100px;
 	margin-bottom: 150px;
+	
 }
 /*
 main div	{
@@ -63,18 +68,31 @@ main div	{
 	
 }
 
+.column:first-child {
+	margin-left: 30px;
+}
+
+.column:last-child {
+	margin-right: 0;
+}
+
 .column.large	{
-	width: 630px;
+	width: 50%;
 }
 
 .column.medium	{
-	width: 300px;
+	width: 25%;
 }
 
 .column.small	{
-	width: 240px;
+	width: 20%;
 }
 
+@media only screen and (max-width: 1350px) {
+	.column	{
+		margin-right: 50px;
+	}
+}
 
 .story	{
 	font-family: Georgia;
@@ -183,6 +201,15 @@ div.storyImg3.rightCol1	{
 
 .bitelinks a:active	{
 	color: chartreuse;
+}
+@media only screen and (max-width: 1350px)	{
+	.small-hide	{
+		display: none;
+	}
+	
+	.small-show	{
+		display: initial;
+	}
 }
 
 /*footer styling*/
