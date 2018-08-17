@@ -6,6 +6,7 @@ body	{
 div	{
 	display: block;
 }
+
 /*header*/
 .logo	{
 	display: flex;
@@ -47,8 +48,27 @@ header a	{
 	color: #000;
 }
 
-.small-show	{
+header a:hover {
+	color: MediumAquamarine;
+}
+
+.medium-show	{
 	display: none;
+}
+
+@media only screen and (max-width: 1350px) {
+	header {
+		font-size: .875rem;
+		position: initial;
+	}
+	
+	header div, header nav {
+	margin: 0 1rem;
+	}
+	
+	.medium-show	{
+		display: initial;
+	}
 }
 
 /*main content*/
@@ -93,12 +113,6 @@ main div	{
 	width: 20%;
 }
 
-@media only screen and (max-width: 1350px) {
-	.column	{
-		margin-right: 3.125rem;
-	}
-}
-
 .story	{
 	font-family: Georgia;
 	font-size: 1rem;
@@ -116,6 +130,7 @@ main div	{
 
 .leadImg	{
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+	background-repeat: no-repeat;
 	height: 18.75rem;
 	display: flex;
 	align-items: center;
@@ -125,10 +140,12 @@ main div	{
 	font-size: 2.5rem;
 	padding-left: 1rem;
 }
+
 /*Sub-articles - Column 1*/
 .subCol	{
+	display: flex;
 	flex-direction: column;
-	width: 18.75rem;
+	width: 45%;
 }
 
 .stories	{
@@ -136,6 +153,10 @@ main div	{
 	display: flex;
 	justify-content: space-between;
 	margin-right: 0;
+}
+
+.rightCol1, .leftCol1	{
+	min-height: 15rem;
 }
 
 div.storyImg2.leftCol1	{
@@ -208,13 +229,26 @@ div.storyImg3.rightCol1	{
 	color: chartreuse;
 }
 @media only screen and (max-width: 1350px)	{
+	main	{
+		position: initial;
+		margin-top: 2rem;
+	}
+	
+	.subCol	{
+		width: 47%;
+	}
+	
+	.column	{
+		margin-right: 3.125rem;
+	}
+		
 	.small-hide	{
 		display: none;
 	}
 	
-	.small-show	{
-		display: initial;
-	}
+}
+@media only screen and (max-width: 950px) {
+	
 }
 
 /*footer styling*/
@@ -259,7 +293,13 @@ footer a	{
 	color: black;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1350px)	{
+	footer {
+		height: 10rem;
+	}
+}
+
+@media only screen and (max-width: 950px) {
 	footer {
 		font-size: 1.3rem;
 	}
