@@ -8,19 +8,32 @@ div	{
 	display: block;
 }
 
+.mobile-nav	{
+	display: none;
+}
+
 @media only screen and (max-width: 1350px) {
 	body {
 		font-size: 20px;
 	}
 }
 
-@media only screen and (max-width: 1350px)	{
+@media only screen and (max-width: 650px)	{
 	body	{
 		font-size: 24px;
+		background-color: white;
 	}
 	
 	h1	{
 		font-size: 2rem;
+	}
+	
+	.large-nav	{
+		display: none;
+	}
+	
+	.mobile-nav	{
+		display: initial;
 	}
 }
 
@@ -287,14 +300,21 @@ div.storyImg3.rightCol1	{
 	.column	{
 		margin-right: 3.125rem;
 	}
-		
+	
+	.leftCol1 .imgText, .rightCol1 .imgText	{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
 	.tablet-hide	{
 		display: none;
 	}
 	
 }
 @media only screen and (max-width: 950px) {
-	
+	.leadImg p	{
+		font-size: 1.5rem;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -309,11 +329,19 @@ div.storyImg3.rightCol1	{
 		margin: 0 auto;
 	}
 	
-	
-	.leadImg p	{
-		font-size: 1.85rem;
+	.catCEO	{
+		width: 100%;
+		margin: 2rem auto 1rem;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	
+	.catCEO p	{
+		width: 70%;
+		margin: 0 auto;
+
+	}
 	.storyTitle	{
 		font-size: 1.45rem;
 	}
@@ -322,8 +350,10 @@ div.storyImg3.rightCol1	{
 		font-size: 1.75rem;
 	}
 	
-	.column	{
-		margin: 0;
+	.column.medium	{
+		margin: 1rem auto;
+		display: flex;
+		align-items: center;
 	}
 	
 	.subCol	{
@@ -347,16 +377,15 @@ div.storyImg3.rightCol1	{
 	.mobile	{
 		width: 85%;
 		margin: 0 auto;
-		min-height: 18rem;
 	}
 	
-	.leftCol1 .imgText, .rightCol1 .imgText	{
-		width: 85%;
-		margin: 0 auto;
-	}
+	
 	
 	.storyImg2, .storyImg3	{
 		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -408,6 +437,14 @@ footer a:hover	{
 	color: white;
 }
 
+#footer-items	{
+		width: 85%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
 @media only screen and (max-width: 1350px)	{
 	footer {
 		height: 10rem;
@@ -419,3 +456,18 @@ footer a:hover	{
 		font-size: 1.3rem;
 	}
 }	
+
+@media only screen and (max-width: 650px) {
+	footer	{
+		font-size:	1rem;
+		height:7rem;
+	}
+	
+	.info	{
+		margin: 0 auto;
+	}
+		
+	.copyright	{
+		font-size: .75rem;
+	}
+}
